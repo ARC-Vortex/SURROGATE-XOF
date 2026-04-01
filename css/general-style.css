@@ -1,0 +1,160 @@
+/* Global things */
+body {
+	color: var(--color);
+	overflow: hidden;
+	--background: #0f0f0f;
+	--color: #dfdfdf;
+	--points: #ffffff;
+	background: var(--background);
+}
+
+span {
+    display: inline-block;
+}
+
+@font-face {
+  font-family: CRDIReg;
+  src: url('../font-folder/Mono-Regular.otf')
+}
+
+@font-face {
+    font-family: CRDISerifReg;
+    src: url('../font-folder/Serif-Regular.otf')
+}
+
+@font-face {
+    font-family: CRDISerifLight;
+    src: url('../font-folder/Serif-Light.otf')
+}
+
+
+/* General text */
+h1, h2, h3, b, input {
+	display: inline;
+	font-family: CRDIReg;
+}
+
+/* These are styles for different states of components. You can make layer-specific versions with .c.locked, for example */
+.locked {
+	background-color: #bf8f8f;
+	cursor: not-allowed;
+}
+
+/* Can meens can be clicked/bought/etc */
+.can {
+	cursor: pointer;
+}
+
+.can:hover {
+	transform: scale(1.0, 1.0);
+	box-shadow: 0 0 px
+}
+
+.bought {
+	background-color: #77bf5f;
+	cursor: default;
+}
+
+#points {
+	color: var(--points);
+	text-shadow: 0 0 10px var(--points);
+}
+
+.prototype-cont-v1 {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(132, 250, 176, 0.1) 0%, rgba(143, 211, 244, 0.1) 100%);
+  border: 1.25px solid;
+  border-image: linear-gradient(180deg, rgba(132, 250, 176, 1) 0%, rgba(143, 211, 244, 0.5) 100%);
+  border-image-slice: 1;
+}
+
+.prototype-cont-v2 {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(161, 140, 209, 0.1) 0%, rgba(251, 194, 235, 0.1) 100%);
+  border: 0.5px solid;
+  border-image: linear-gradient(180deg, rgba(161, 140, 209, 1) 0%, rgba(251, 194, 235, 0.5) 100%);
+  border-image-slice: 1;
+}
+
+.prototype-cont-v3 {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(-90deg, rgba(106, 17, 203, 0.1) 0%, rgba(37, 117, 252, 0.1) 100%);
+  border: 0.5px solid;
+  border-image: linear-gradient(0deg, rgba(106, 17, 203, 0.5) 0%, rgba(37, 117, 252, 1) 100%);
+  border-image-slice: 1;
+}
+
+.prototype-cont-v4 {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(-180deg, rgba(247, 140, 160, 0.1) 0%, rgba(249, 116, 143, 0.1) 19%, rgba(253, 134, 140, 0.1) 60%, rgba(254, 154, 139, 0.1) 100%);
+  border: 0.5px solid;
+  border-image: linear-gradient(0deg, rgba(247, 140, 160, 0.5) 0%, rgba(249, 116, 143, 0.7) 19%, rgba(253, 134, 140, 0.9) 60%, rgba(254, 154, 139, 1) 100%);
+  border-image-slice: 1;
+}
+
+.prototype-cont-v9 {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(-20deg, #E9DEFA10 0%, #FBFCDB10 100%);
+  border: 0.5px solid;
+  border-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  border-image-slice: 1;
+}
+
+
+.prototype-title , .prototype-ordinal {
+  float: left;
+  border-bottom: 1px solid;
+}
+
+.prototype-title {
+  width: 500px;
+  text-align: left;
+}
+
+.prototype-ordinal {
+  width: 500px;
+  text-align: right;
+}
+
+.body {
+  text-align: left;
+  max-width: 1000px;
+}
+
+#pt-cr {
+ color: #FFFFFFFF;
+ font-family: CRDIMed;
+ text-decoration: underline;
+}
+
+#pr-cr {
+  color: #96E2FFFF;
+  font-family: CRDIMed;
+  text-decoration: underline;
+}
+
+#br-cr {
+  color: #5AB9FF;
+  font-family: CRDIMed;
+  text-decoration: underline;
+}
+
+#ac-cr {
+  color: #ff8500;
+  font-family: CRDIMed;
+  text-decoration: underline;
+}
+
+#it {
+  font-family: CRDILightIT;
+}

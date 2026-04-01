@@ -1,0 +1,12 @@
+.full_text_ani {
+  animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
