@@ -14,38 +14,43 @@
     <link rel="stylesheet" type="text/css" href="css/custom-style.css" />
     <link rel="stylesheet" type="text/css" href="css/variables.css" />
 
-	<script src="js/technical/break_eternity.js"></script>
+	<script src="JS/technical/break_eternity.js"></script>
 
-	<script src="js/frameworks/vue.min.js"></script>
-	<script src="js/super_awesome_functions_that_i_made_because_i_love_tmt/value_snapper.js"></script>
-    <script src="js/super_awesome_functions_that_i_made_because_i_love_tmt/scrambler.js"></script>
+	<script src="JS/Frameworks/vue.min.js"></script>
 
-    <script src="js/specialFuncs.js"></script>
+    <script src="JS/HelperFN/ultra_init.js"><</script>
 
-	<script src="js/technical/layerSupport.js"></script>
+	<script src="JS/HelperFN/Utliity/value_snapper.js"></script>
+    <script src="JS/HelperFN/Utliity/scrambler.js"></script>
+    <script src="JS/HelperFN/Utliity/tooltip_v3.js"></script>
+    <script src="JS/HelperFN/UI/hover_sync.js"></script>
 
-	<script src="js/mod.js"></script>
-	<script src="js/technical/loader.js"></script>
+    <script src="JS/specialFuncs.js"></script>
 
-	<script src="js/technical/temp.js"></script>
-	<script src="js/technical/displays.js"></script>
+	<script src="JS/technical/layerSupport.js"></script>
+
+	<script src="JS/mod.js"></script>
+	<script src="JS/technical/loader.js"></script>
+
+	<script src="JS/technical/temp.js"></script>
+	<script src="JS/technical/displays.js"></script>
 	
-	<script src="js/game.js"></script>
-	<script src="js/utils.js"></script>
-	<script src="js/utils/easyAccess.js"></script>
-	<script src="js/technical/systemComponents.js"></script>
-	<script src="js/components.js"></script>
-	<script src="js/technical/canvas.js"></script>
-	<script src="js/technical/particleSystem.js"></script>
-	<script src="js/utils/NumberFormating.js"></script>
-	<script src="js/utils/functions.js"></script>
-	<script src="js/utils/options.js"></script>
-	<script src="js/utils/save.js"></script>
-	<script src="js/utils/themes.js"></script>
+	<script src="JS/game.js"></script>
+	<script src="JS/utils.js"></script>
+	<script src="JS/utils/easyAccess.js"></script>
+	<script src="JS/technical/systemComponents.js"></script>
+	<script src="JS/components.js"></script>
+	<script src="JS/technical/canvas.js"></script>
+	<script src="JS/technical/particleSystem.js"></script>
+	<script src="JS/utils/NumberFormating.js"></script>
+	<script src="JS/utils/functions.js"></script>
+	<script src="JS/utils/options.js"></script>
+	<script src="JS/utils/save.js"></script>
+	<script src="JS/utils/themes.js"></script>
 </head>
 
 
-<body onload="load(); FillPreloadObject()" onmousemove="updateMouse(event)">
+<body onload="load(); BMC_Init(); Depot_Init()" onmousemove="updateMouse(event)">
     <div id="tooltip-v3"></div>
     <div class="caution">
         <br>

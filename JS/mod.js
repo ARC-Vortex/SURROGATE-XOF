@@ -4,14 +4,17 @@ let modInfo = {
     author: "komputer cast | ( citrine_ex )",
     pointsName: "Points",
     modFiles: [
-        "dataset/engrams.js",
-        "dataset/data.js",
-        "BMC/BMC_SELF.js",
-        "BMC/BMC_EFFECTS.js",
-        "BMC/BMC_STYLING.js",
-        "RESEARCH/RESEARCH_SELF.js",
-        "super_awesome_functions_that_i_made_because_i_love_tmt/tooltip_v3.js",
-        "tree.js"
+        "Content/data.JS",
+
+        "Content/BMC/PRELOAD_REGISTRY.JS",
+        "Content/BMC/BMC_SELF.JS",
+        "Content/BMC/BMC_EFFECTS.JS",
+
+        "Content/DEPOT/PRELOAD_REGISTRY.JS",
+        "Content/DEPOT/DEPOT_SELF.JS",
+        "Content/DEPOT/DEPOT_EFFECTS.JS",
+
+        "tree.JS"
     ],
 
     discordName: "",
@@ -22,8 +25,8 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-    num: "V1",
-    name: "tech demo - visuals I",
+    num: "V1.002",
+    name: "tech demo - visuals II",
 }
 
 let changelog = `<h1>Changelog:</h1><br>

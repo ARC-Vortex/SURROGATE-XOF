@@ -896,7 +896,7 @@
 
 
     Decimal.prototype.fromMantissaExponent_noNormalize = function (mantissa, exponent) {
-      //The idea of 'normalizing' a break_infinity.js style Decimal doesn't really apply. So just do the same thing.
+      //The idea of 'normalizing' a break_infinity.JS style Decimal doesn't really apply. So just do the same thing.
       this.fromMantissaExponent(mantissa, exponent);
       return this;
     };
@@ -2102,7 +2102,7 @@
       return result;
     }
     
-    //Super-logarithm, one of tetration's inverses, tells you what size power tower you'd have to tetrate base to to get number. By definition, will never be higher than 1.8e308 in break_eternity.js, since a power tower 1.8e308 numbers tall is the largest representable number.
+    //Super-logarithm, one of tetration's inverses, tells you what size power tower you'd have to tetrate base to to get number. By definition, will never be higher than 1.8e308 in break_eternity.JS, since a power tower 1.8e308 numbers tall is the largest representable number.
     // https://en.wikipedia.org/wiki/Super-logarithm
     Decimal.prototype.slog = function(base = 10) {
       if (this.mag < 0) { return Decimal.dNegOne; }
@@ -2221,7 +2221,7 @@
         }
       }
       
-      //layeradd10: like adding 'diff' to the number's slog(base) representation. Very similar to tetrate base 10 and iterated log base 10. Also equivalent to adding a fractional amount to the number's layer in its break_eternity.js representation.
+      //layeradd10: like adding 'diff' to the number's slog(base) representation. Very similar to tetrate base 10 and iterated log base 10. Also equivalent to adding a fractional amount to the number's layer in its break_eternity.JS representation.
       if (diff > 0)
       {
         var subtractlayerslater = 0;
@@ -2583,7 +2583,7 @@ for (var i = 0; i < 10; ++i)
 
 */
     
-    //Pentation/pentate: The result of tetrating 'height' times in a row. An absurdly strong operator - Decimal.pentate(2, 4.28) and Decimal.pentate(10, 2.37) are already too huge for break_eternity.js!
+    //Pentation/pentate: The result of tetrating 'height' times in a row. An absurdly strong operator - Decimal.pentate(2, 4.28) and Decimal.pentate(10, 2.37) are already too huge for break_eternity.JS!
     // https://en.wikipedia.org/wiki/Pentation
     Decimal.prototype.pentate = function(height = 2, payload = FC_NN(1, 0, 1)) {
       payload = D(payload);

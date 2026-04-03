@@ -134,9 +134,8 @@ addLayer("data", {
 
         const ACTUAL_Tickspeed = BMC_Hash_Rate()
 
-        if (player.subtabs.data.mainTabs == "Main") {
-            GetBMCRender()
-        }
+        BitMachineRender_V2()
+        DepotRender_V2()
         caution()
         CheckForProgress(delta)
 
@@ -225,6 +224,7 @@ addLayer("data", {
                         </div>
                     </div>
                     <div class="depot-container">
+                    <button id="depot-permit-button">Advance</button>
                         <div class="depot-stage-change-container">
                             <video 
                                 src="images/DepotStageSeq.webm" 
@@ -243,7 +243,7 @@ addLayer("data", {
                         </div>  
                     </div>
                     
-                    <button id="kill-me">kill me</button>
+                 
                     `
                 }],
             ]

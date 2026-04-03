@@ -72,7 +72,7 @@ function regularFormat(num, precision) {
 }
 
 function FormatV2(num, precision = 3) {
-    if (num.gte(1e3))return standard(num, precision)
+    if (num.gte(1e3))return format(num, precision)
     else return regularFormat(num, precision)
 }
 

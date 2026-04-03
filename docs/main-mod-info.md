@@ -1,7 +1,7 @@
 # mod.js
 
-Most of the non-layer code and data that you're likely to edit is here in [mod.js](/js/mod.js).
-Everything in [mod.js](/js/mod.js) will not be altered by updates, besides the addition of new things.
+Most of the non-layer code and data that you're likely to edit is here in [mod.js](/JS/mod.js).
+Everything in [mod.js](/JS/mod.js) will not be altered by updates, besides the addition of new things.
 
 Here's a breakdown of what's in it:
 
