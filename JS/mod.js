@@ -4,17 +4,17 @@ let modInfo = {
     author: "komputer cast | ( citrine_ex )",
     pointsName: "Points",
     modFiles: [
-        "Content/data.JS",
+        "Content/data.js",
 
-        "Content/BMC/PRELOAD_REGISTRY.JS",
-        "Content/BMC/BMC_SELF.JS",
-        "Content/BMC/BMC_EFFECTS.JS",
+        "Content/BMC/PRELOAD_REGISTRY.js",
+        "Content/BMC/BMC_SELF.js",
+        "Content/BMC/BMC_EFFECTS.js",
 
-        "Content/DEPOT/PRELOAD_REGISTRY.JS",
-        "Content/DEPOT/DEPOT_SELF.JS",
-        "Content/DEPOT/DEPOT_EFFECTS.JS",
+        "Content/DEPOT/PRELOAD_REGISTRY.js",
+        "Content/DEPOT/DEPOT_SELF.js",
+        "Content/DEPOT/DEPOT_EFFECTS.js",
 
-        "tree.JS"
+        "tree.js"
     ],
 
     discordName: "",
