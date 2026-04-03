@@ -133,9 +133,11 @@ addLayer("data", {
 
 
         const ACTUAL_Tickspeed = BMC_Hash_Rate()
+        if (player.subtabs.data.mainTabs == "Main") {
+            BitMachineRender_V2()
+            DepotRender_V2()
+        }
 
-        BitMachineRender_V2()
-        DepotRender_V2()
         caution()
         CheckForProgress(delta)
 

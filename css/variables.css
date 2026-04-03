@@ -329,6 +329,7 @@
 }
 
 .depot-container {
+    opacity:                0;
     overflow:               hidden;
 
     position:               relative;
@@ -411,6 +412,15 @@
     z-index:                6;
 }
 
+.depot-container[data-state="LOCKED"] { opacity: 0; user-select: none; }
+.depot-container[data-state="UNLOCKED"] { opacity: 1; user-select: all; }
+
+
+#depot-permit-button[data-state="UNLOCKED"] { opacity: 1; }
+.depot-progress-requirement[data-state="UNLOCKED"]  { opacity: 0; }
+
+#depot-permit-button[data-state="LOCKED"] { opacity: 0; }
+.depot-progress-requirement[data-state="LOCKED"] { opacity: 1; }
 /*
 .bit-machine-container {
     position: relative;
