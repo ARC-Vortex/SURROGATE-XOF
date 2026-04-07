@@ -16,7 +16,11 @@ function DepotRender_V2() {
         DEPOT_PRELOAD_OBJECT.DEPOT_PROG_BTN.setAttribute("data-state", STATE_KEY)
         DEPOT_PRELOAD_OBJECT.DEPOT_PROG_BTN_TEXT.setAttribute("data-state", STATE_KEY)
     }
-
+    if (IS_DEPOT_RESET_IN_PROGRESS) {
+        DEPOT_PRELOAD_OBJECT.DEPOT_PROG_BTN.disabled = true
+    } else {
+        DEPOT_PRELOAD_OBJECT.DEPOT_PROG_BTN.disabled = false
+    }
 
 
     DEPOT_PRELOAD_OBJECT.DEPOT_PROG_BTN_TEXT.innerText = `You need ${format(Depot_Progression())} Bits`

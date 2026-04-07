@@ -10,6 +10,7 @@ function Fill_Depot_Preload() {
     DEPOT_PRELOAD_OBJECT.DEPOT_PROG_VID = document.getElementById("DEPOT-VID")
 }
 
+let IS_DEPOT_RESET_IN_PROGRESS = false
 function Depot_Init() {
     Fill_Depot_Preload()
     if (!DEPOT_PRELOAD_OBJECT.DEPOT_CONTAINER) {
@@ -18,21 +19,23 @@ function Depot_Init() {
     }
 
     DEPOT_PRELOAD_OBJECT.DEPOT_PROG_BTN.addEventListener("mousedown", function () {
-        if (player.data.BMC.Bits.gte(Depot_Progression())) {
+        if (player.data.BMC.Bits.gte(Depot_Progression() && !IS_DEPOT_RESET_IN_PROGRESS) ) {
+            IS_DEPOT_RESET_IN_PROGRESS = true
             const VID = DEPOT_PRELOAD_OBJECT.DEPOT_PROG_VID
             if (VID) {
                 VID.currentTime = 0
                 VID.style.display = "block"
                 VID.play()
-
                 CHECK_FOR_CANCEL = setInterval(() => {
                     if (VID.ended) {
                         clearInterval(CHECK_FOR_CANCEL)
                         Depot_Progression_Reset()
+                        IS_DEPOT_RESET_IN_PROGRESS = false
                         VID.style.display = "none"
                     } else if (!document.contains(VID)) {
                         clearInterval(CHECK_FOR_CANCEL)
                         Depot_Progression_Reset()
+                        IS_DEPOT_RESET_IN_PROGRESS = false
                     }
                 }, 16.666)
             }
